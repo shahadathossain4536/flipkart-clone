@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Header from "../../components/Header";
 import MenuHeader from "../../components/MenuHeader";
 import { getAllCategory } from "../../actions";
+import Layout from "../../components/Layout";
 
 /**
  * @author
@@ -11,10 +12,9 @@ import { getAllCategory } from "../../actions";
 
 const Homepage = (props) => {
   return (
-    <div>
-      <Header />
-      <MenuHeader />
-    </div>
+    <Layout>
+      <h1>Home Page</h1>
+    </Layout>
   );
 };
 
